@@ -15,6 +15,8 @@ public class BloodSchedulerApp {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Patient patient = new Patient("Bob", "Urgent", 45, true, "Dr Dre", "01800");
+        System.out.println(patient.toString());
     }
     
 }
