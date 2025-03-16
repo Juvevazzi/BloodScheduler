@@ -52,7 +52,7 @@ public class Queue implements QueueInterface {
         if (theQueue.isEmpty()) {
             return "No Show Queue is empty.";
         } else {
-            StringBuilder sb = new StringBuilder("No Show Queue:\n");
+            StringBuffer sb = new StringBuffer();
             for (Patient patient : theQueue) {
                 sb.append(patient).append("\n");
             }

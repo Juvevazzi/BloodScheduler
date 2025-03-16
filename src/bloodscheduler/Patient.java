@@ -87,8 +87,8 @@ public class Patient {
 
     @Override
     public String toString() {
-        return "Patient{name='" + name + "', priority='" + priority + "', age=" + age
+        return "name='" + name + "', priority='" + priority + "', age=" + age
                 + ", hospital=" + hospital + ", priorityScore=" + priorityScore
-                + ", gpName='" + gpName + "', gpPhone='" + gpPhone + "'}";
+                + ", gpName='" + gpName + "', gpPhone='" + gpPhone;
     }
 }
