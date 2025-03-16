@@ -327,6 +327,7 @@ public class BloodSchedulerGUI extends javax.swing.JFrame {
             if (priorityQueue.size() == 1){
             priorityQueue.dequeue();
             nextPatientTextPane.setText("No More Patients");
+            fullPatientListTextPane.setText("No More Patients");
             } else {
                 priorityQueue.dequeue();
                 nextPatientTextPane.setText(priorityQueue.getFirst().toString());
