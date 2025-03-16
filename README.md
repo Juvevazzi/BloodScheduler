@@ -1,5 +1,3 @@
-# Data Structures & Algorithms - Problem Solving Document
-
 ## Student Details
 
 **Name:** Ricardo Giacovazzi  
@@ -109,15 +107,3 @@ Used to store "No Show" patients and display the last 5 in the Patient Intake Da
 
 - Recursively sorts an `ArrayList` of patients by priority score using **Bubble Sort**.
 - Includes a `swap()` method for swapping elements during sorting.
-
----
-
-## Class Diagram
-
-_(To be inserted if available)_
-
----
-
-## GitHub Repository
-
-[GitHub Repo Link](#) _(Update with actual link)_
