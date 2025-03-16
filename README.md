@@ -8,10 +8,10 @@
 
 My task was to design and implement an application that makes use of abstract data types (ADTs) that implement interfaces in Java. The application must use a NetBeans GUI and include an example of recursion. The following factors need to be considered in the design:
 
-- List all patients with their relevant details.
-- List the last 5 "No Shows".
-- Show the next patient to be tested via a priority queue.
-- Base the priority of the queue on the patient's age, priority, and whether they come from a hospital ward.
+- 📋 List all patients with their relevant details.
+- 🚫 List the last 5 "No Shows".
+- ⏩ Show the next patient to be tested via a priority queue.
+- 📊 Base the priority of the queue on the patient's age, priority, and whether they come from a hospital ward.
 
 ### Chosen ADTs
 

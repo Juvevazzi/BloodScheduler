@@ -8,7 +8,7 @@ package bloodscheduler;
  *
  * @author rgiacovazzi
  * Date: 14/03/2025
- * Description: 
+ * Description: The QueueInterface interface defines the methods that a Queue class must implement in the BloodScheduler application.
  */
 public interface QueueInterface {
     
