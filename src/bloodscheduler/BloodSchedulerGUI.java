@@ -7,6 +7,8 @@ package bloodscheduler;
 /**
  *
  * @author rgiacovazzi
+ * Date: 14/03/2025
+ * Description: BloodSchedulerGUI is the main class that creates the GUI for the BloodScheduler application. It instantiates the PriorityQueue and Queue classes and allows the user to interact with the application.
  */
 public class BloodSchedulerGUI extends javax.swing.JFrame {
     PriorityQueue priorityQueue;
@@ -35,7 +37,7 @@ public class BloodSchedulerGUI extends javax.swing.JFrame {
         priorityQueue.enqueue(p6);
         
         priorityQueue.printPQueue();
-        noShowTextPane.setText("Empty No Show List");
+        noShowTextPane.setText("No Show Queue is empty.");
         try {
             nextPatientTextPane.setText(priorityQueue.getFirst().toString());
             fullPatientListTextPane.setText(priorityQueue.printPQueue());
@@ -430,7 +432,7 @@ public class BloodSchedulerGUI extends javax.swing.JFrame {
             noShowTextPane.setText(noShowQueue.printQueue());
         } catch (NullPointerException e) {
             nextPatientTextPane.setText("No More Patients");
-            noShowTextPane.setText("Empty No Show List");
+            noShowTextPane.setText("No Show Queue is empty.");
             noShowTextPane.setText(noShowQueue.printQueue());
         }
         

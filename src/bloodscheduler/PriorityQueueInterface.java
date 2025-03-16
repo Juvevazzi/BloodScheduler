@@ -7,6 +7,8 @@ package bloodscheduler;
 /**
  *
  * @author rgiacovazzi
+ * Date: 14/03/2025
+ * Description: The PriorityQueueInterface interface defines the methods that a PriorityQueue class must implement in the BloodScheduler application.
  */
 public interface PriorityQueueInterface {
     public void enqueue(Object element);

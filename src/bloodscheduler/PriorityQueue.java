@@ -9,6 +9,8 @@ import java.util.*;
 /**
  *
  * @author rgiacovazzi
+ * Date: 14/03/2025
+ * Description: The PriorityQueue class implements the PriorityQueueInterface and represents a priority queue in the BloodScheduler application. It contains an ArrayList of patients and methods to enqueue, dequeue, and print the priority queue.
  */
 public class PriorityQueue implements PriorityQueueInterface{
     private ArrayList<Patient> thePQueue;
@@ -47,11 +49,12 @@ public class PriorityQueue implements PriorityQueueInterface{
 
     @Override
     public String printPQueue() {
-        String result = "";
+        
+        StringBuffer sb = new StringBuffer();
         for (Patient patient : thePQueue) {
-            result += patient.toString() + "\n";
+            sb.append(patient.toString() + "\n");
         }
-        return result;
+        return sb.toString();
     }
 
     public Patient getFirst() {

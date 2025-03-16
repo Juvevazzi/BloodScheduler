@@ -9,6 +9,8 @@ import java.util.ArrayList;
 /**
  *
  * @author rgiacovazzi
+ * Date: 14/03/2025
+ * Description: The BubbleSort class implements the bubble sort algorithm to sort an array of patients in ascending order.
  */
 public class BubbleSort {
 

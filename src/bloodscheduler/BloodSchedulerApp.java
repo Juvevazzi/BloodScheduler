@@ -9,6 +9,8 @@ import java.util.*;
 /**
  *
  * @author rgiacovazzi
+ * Date: 14/03/2025
+ * Description: BloodSchedulerApp is the main class that tests the functionality of the BloodScheduler application. It instantiates the GUI and tests the Patient, Queue, PriorityQueue, and BubbleSort classes.
  */
 public class BloodSchedulerApp {
 
@@ -16,6 +18,9 @@ public class BloodSchedulerApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        // Testing functionality
+        
         /// Create patients
         Patient p1 = new Patient("Alice", "Urgent", 70, true, "Dr. Smith", "123-456-7890");
         Patient p2 = new Patient("Bob", "Medium", 30, false, "Dr. Johnson", "987-654-3210");

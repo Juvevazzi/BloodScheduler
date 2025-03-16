@@ -9,6 +9,8 @@ import java.util.*;
 /**
  *
  * @author rgiacovazzi
+ * Date: 14/03/2025
+ * Description: The Queue class implements the QueueInterface and represents a queue in the BloodScheduler application. It contains an ArrayList of patients and methods to enqueue, dequeue, and print the queue.
  */
 public class Queue implements QueueInterface {
 

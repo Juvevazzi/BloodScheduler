@@ -7,6 +7,9 @@ package bloodscheduler;
 /**
  *
  * @author rgiacovazzi
+ * Date: 14/03/2025
+ * Description: The Patient class represents a patient in the BloodScheduler application. It contains the patient's name, priority, age, hospital status, priority score, GP name, and GP phone number.
+ * The priority score is calculated based on the patient's priority, age, and hospital status.
  */
 public class Patient {
 
