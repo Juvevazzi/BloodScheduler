@@ -82,6 +82,7 @@ public class BloodSchedulerApp {
         bubbleSort.bubbleSort();
 
         // Print sorted patient list
+        System.out.println("\n");
         System.out.println("Sorted Patient List:");
         for (Patient patient : patientList) {
             System.out.println(patient);

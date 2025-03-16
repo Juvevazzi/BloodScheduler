@@ -58,45 +58,38 @@ public class BloodSchedulerGUI extends javax.swing.JFrame {
 
         mainPanel = new javax.swing.JPanel();
         intakePanel = new javax.swing.JPanel();
-        intakeTitleLabel = new javax.swing.JLabel();
-        patientIntakeFormPanel = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        patientIntakeFormHeadingLabel = new javax.swing.JLabel();
         patientNameLabel = new javax.swing.JLabel();
         patientNameTextField = new javax.swing.JTextField();
         patientAgeLabel = new javax.swing.JLabel();
         patientAgeTextField = new javax.swing.JTextField();
         patientPriorityComboBox = new javax.swing.JComboBox<>();
-        jLabel3 = new javax.swing.JLabel();
+        patientPriorityLabel = new javax.swing.JLabel();
         hospitalCheckBox = new javax.swing.JCheckBox();
         gpNameLabel = new javax.swing.JLabel();
         gpNameTextField = new javax.swing.JTextField();
         gpPhoneLabel = new javax.swing.JLabel();
         gpPhoneTextField = new javax.swing.JTextField();
         patientIntakeButton = new javax.swing.JButton();
-        noShowListPanel = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         noShowTextPane = new javax.swing.JTextPane();
-        jLabel1 = new javax.swing.JLabel();
+        intakeTitleLabel = new javax.swing.JLabel();
+        noShowsListLabel = new javax.swing.JLabel();
         testerPanel = new javax.swing.JPanel();
         testerTitleLabel = new javax.swing.JLabel();
-        nextPatientPanel = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         nextPatientTextPane = new javax.swing.JTextPane();
         nextPatientButton = new javax.swing.JButton();
         noShowButton = new javax.swing.JButton();
-        fullPatientListPanel = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         fullPatientListTextPane = new javax.swing.JTextPane();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        intakeTitleLabel.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
-        intakeTitleLabel.setText("Patient Intake Dashboard");
-
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel2.setText("Patient Intake Form");
+        patientIntakeFormHeadingLabel.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        patientIntakeFormHeadingLabel.setText("Patient Intake Form");
 
         patientNameLabel.setText("Patient Name:");
 
@@ -119,7 +112,7 @@ public class BloodSchedulerGUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setText("Patient Priority:");
+        patientPriorityLabel.setText("Patient Priority:");
 
         hospitalCheckBox.setText("Is the patient from a hospital ward?");
         hospitalCheckBox.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
@@ -140,119 +133,91 @@ public class BloodSchedulerGUI extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout patientIntakeFormPanelLayout = new javax.swing.GroupLayout(patientIntakeFormPanel);
-        patientIntakeFormPanel.setLayout(patientIntakeFormPanelLayout);
-        patientIntakeFormPanelLayout.setHorizontalGroup(
-            patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(patientIntakeFormPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, patientIntakeFormPanelLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(349, 349, 349))
-                    .addGroup(patientIntakeFormPanelLayout.createSequentialGroup()
-                        .addGroup(patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(gpNameTextField, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(patientPriorityComboBox, javax.swing.GroupLayout.Alignment.LEADING, 0, 343, Short.MAX_VALUE)
-                                        .addComponent(patientNameTextField, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(patientNameLabel, javax.swing.GroupLayout.Alignment.LEADING))
-                                    .addComponent(jLabel3)))
-                            .addComponent(gpNameLabel))
-                        .addGap(18, 18, 18)
-                        .addGroup(patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(patientIntakeFormPanelLayout.createSequentialGroup()
-                                .addComponent(gpPhoneLabel)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(patientIntakeFormPanelLayout.createSequentialGroup()
-                                .addGroup(patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(patientAgeLabel, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(hospitalCheckBox, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(patientAgeTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 295, Short.MAX_VALUE)
-                                    .addComponent(gpPhoneTextField, javax.swing.GroupLayout.Alignment.LEADING))
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                    .addGroup(patientIntakeFormPanelLayout.createSequentialGroup()
-                        .addComponent(patientIntakeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
-        );
-        patientIntakeFormPanelLayout.setVerticalGroup(
-            patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(patientIntakeFormPanelLayout.createSequentialGroup()
-                .addComponent(jLabel2)
-                .addGap(18, 18, 18)
-                .addGroup(patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(patientNameLabel)
-                    .addComponent(patientAgeLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(patientNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(patientAgeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(patientPriorityComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hospitalCheckBox))
-                .addGap(18, 18, 18)
-                .addGroup(patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(gpNameLabel)
-                    .addComponent(gpPhoneLabel))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(patientIntakeFormPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(gpNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(gpPhoneTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
-                .addComponent(patientIntakeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
         jScrollPane1.setViewportView(noShowTextPane);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel1.setText("Latest 5 No Shows");
+        intakeTitleLabel.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        intakeTitleLabel.setText("Patient Intake Dashboard");
 
-        javax.swing.GroupLayout noShowListPanelLayout = new javax.swing.GroupLayout(noShowListPanel);
-        noShowListPanel.setLayout(noShowListPanelLayout);
-        noShowListPanelLayout.setHorizontalGroup(
-            noShowListPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(noShowListPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(noShowListPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 666, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 658, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(23, Short.MAX_VALUE))
-        );
-        noShowListPanelLayout.setVerticalGroup(
-            noShowListPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, noShowListPanelLayout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+        noShowsListLabel.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        noShowsListLabel.setText("Latest 5 No Shows");
 
         javax.swing.GroupLayout intakePanelLayout = new javax.swing.GroupLayout(intakePanel);
         intakePanel.setLayout(intakePanelLayout);
         intakePanelLayout.setHorizontalGroup(
             intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(intakePanelLayout.createSequentialGroup()
-                .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, intakePanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1)
                     .addComponent(intakeTitleLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(noShowListPanel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(patientIntakeFormPanel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(patientIntakeFormHeadingLabel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, intakePanelLayout.createSequentialGroup()
+                        .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(patientNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(patientNameLabel))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(intakePanelLayout.createSequentialGroup()
+                                .addComponent(patientAgeLabel)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(patientAgeTextField)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, intakePanelLayout.createSequentialGroup()
+                        .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(gpNameTextField, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(patientPriorityComboBox, javax.swing.GroupLayout.Alignment.LEADING, 0, 222, Short.MAX_VALUE))
+                            .addComponent(gpNameLabel))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(gpPhoneTextField)
+                            .addGroup(intakePanelLayout.createSequentialGroup()
+                                .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(gpPhoneLabel)
+                                    .addComponent(hospitalCheckBox))
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, intakePanelLayout.createSequentialGroup()
+                        .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(patientPriorityLabel)
+                            .addComponent(patientIntakeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(noShowsListLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 473, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 21, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         intakePanelLayout.setVerticalGroup(
             intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(intakePanelLayout.createSequentialGroup()
                 .addComponent(intakeTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(patientIntakeFormPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(noShowListPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(patientIntakeFormHeadingLabel)
+                .addGap(18, 18, 18)
+                .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(patientNameLabel)
+                    .addComponent(patientAgeLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(patientNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(patientAgeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(patientPriorityLabel)
+                .addGap(12, 12, 12)
+                .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(patientPriorityComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hospitalCheckBox))
+                .addGap(18, 18, 18)
+                .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(gpNameLabel)
+                    .addComponent(gpPhoneLabel))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(intakePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(gpNameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(gpPhoneTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(patientIntakeButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addComponent(noShowsListLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         testerTitleLabel.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
@@ -277,78 +242,49 @@ public class BloodSchedulerGUI extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout nextPatientPanelLayout = new javax.swing.GroupLayout(nextPatientPanel);
-        nextPatientPanel.setLayout(nextPatientPanelLayout);
-        nextPatientPanelLayout.setHorizontalGroup(
-            nextPatientPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(nextPatientPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(nextPatientPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 503, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2)
-                    .addGroup(nextPatientPanelLayout.createSequentialGroup()
-                        .addComponent(nextPatientButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(noShowButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-        );
-        nextPatientPanelLayout.setVerticalGroup(
-            nextPatientPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(nextPatientPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(nextPatientPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(nextPatientButton, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE)
-                    .addComponent(noShowButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jScrollPane3.setViewportView(fullPatientListTextPane);
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel5.setText("Full Patient List");
-
-        jScrollPane3.setViewportView(fullPatientListTextPane);
-
-        javax.swing.GroupLayout fullPatientListPanelLayout = new javax.swing.GroupLayout(fullPatientListPanel);
-        fullPatientListPanel.setLayout(fullPatientListPanelLayout);
-        fullPatientListPanelLayout.setHorizontalGroup(
-            fullPatientListPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fullPatientListPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(fullPatientListPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane3))
-                .addContainerGap())
-        );
-        fullPatientListPanelLayout.setVerticalGroup(
-            fullPatientListPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fullPatientListPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane3)
-                .addContainerGap())
-        );
 
         javax.swing.GroupLayout testerPanelLayout = new javax.swing.GroupLayout(testerPanel);
         testerPanel.setLayout(testerPanelLayout);
         testerPanelLayout.setHorizontalGroup(
             testerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(testerTitleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 515, Short.MAX_VALUE)
-            .addComponent(nextPatientPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(fullPatientListPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(testerPanelLayout.createSequentialGroup()
+                .addGroup(testerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(testerTitleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(testerPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(testerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(testerPanelLayout.createSequentialGroup()
+                                .addComponent(nextPatientButton, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(noShowButton, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 426, Short.MAX_VALUE))
+                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jScrollPane2))))
+                .addContainerGap())
         );
         testerPanelLayout.setVerticalGroup(
             testerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(testerPanelLayout.createSequentialGroup()
                 .addComponent(testerTitleLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(nextPatientPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(fullPatientListPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLabel4)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(testerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nextPatientButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(noShowButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(58, 58, 58)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane3)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout mainPanelLayout = new javax.swing.GroupLayout(mainPanel);
@@ -356,10 +292,10 @@ public class BloodSchedulerGUI extends javax.swing.JFrame {
         mainPanelLayout.setHorizontalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPanelLayout.createSequentialGroup()
-                .addComponent(intakePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 675, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(testerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 6, Short.MAX_VALUE))
+                .addComponent(intakePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(testerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         mainPanelLayout.setVerticalGroup(
             mainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -373,8 +309,7 @@ public class BloodSchedulerGUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(mainPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -386,26 +321,6 @@ public class BloodSchedulerGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void patientNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientNameTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_patientNameTextFieldActionPerformed
-
-    private void patientPriorityComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientPriorityComboBoxActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_patientPriorityComboBoxActionPerformed
-
-    private void patientIntakeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientIntakeButtonActionPerformed
-        int patientAge = Integer.parseInt(patientAgeTextField.getText());
-        Object patientPriority = patientPriorityComboBox.getSelectedItem();
-        Patient patient = new Patient(patientNameTextField.getText(), patientPriority.toString(), patientAge, hospitalCheckBox.isSelected(), gpNameTextField.getText(), gpPhoneTextField.getText());
-        priorityQueue.enqueue(patient);
-        fullPatientListTextPane.setText(priorityQueue.printPQueue());
-        nextPatientTextPane.setText(priorityQueue.getFirst().toString());
-        
-        
-//        System.out.println(patient);
-    }//GEN-LAST:event_patientIntakeButtonActionPerformed
 
     private void nextPatientButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextPatientButtonActionPerformed
         try {
@@ -438,9 +353,45 @@ public class BloodSchedulerGUI extends javax.swing.JFrame {
         
     }//GEN-LAST:event_noShowButtonActionPerformed
 
+    private void patientIntakeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientIntakeButtonActionPerformed
+    String patientName = patientNameTextField.getText();
+    String patientAgeText = patientAgeTextField.getText();
+    Object patientPriority = patientPriorityComboBox.getSelectedItem();
+    String gpName = gpNameTextField.getText();
+    String gpPhone = gpPhoneTextField.getText();
+
+    // Validate fields
+    if (patientName.isEmpty() || patientAgeText.isEmpty() || gpName.isEmpty() || gpPhone.isEmpty() || patientPriority == null) {
+        javax.swing.JOptionPane.showMessageDialog(this, "All fields must be filled out.", "Validation Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
+    // Validate patientAge is an integer
+    int patientAge;
+    try {
+        patientAge = Integer.parseInt(patientAgeText);
+    } catch (NumberFormatException e) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Patient age must be an integer.", "Validation Error", javax.swing.JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
+    // Create and enqueue the patient
+    Patient patient = new Patient(patientName, patientPriority.toString(), patientAge, hospitalCheckBox.isSelected(), gpName, gpPhone);
+    priorityQueue.enqueue(patient);
+    fullPatientListTextPane.setText(priorityQueue.printPQueue());
+    nextPatientTextPane.setText(priorityQueue.getFirst().toString());
+}//GEN-LAST:event_patientIntakeButtonActionPerformed
+
+    private void patientPriorityComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientPriorityComboBoxActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_patientPriorityComboBoxActionPerformed
+
+    private void patientNameTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_patientNameTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_patientNameTextFieldActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel fullPatientListPanel;
     private javax.swing.JTextPane fullPatientListTextPane;
     private javax.swing.JLabel gpNameLabel;
     private javax.swing.JTextField gpNameTextField;
@@ -449,9 +400,6 @@ public class BloodSchedulerGUI extends javax.swing.JFrame {
     private javax.swing.JCheckBox hospitalCheckBox;
     private javax.swing.JPanel intakePanel;
     private javax.swing.JLabel intakeTitleLabel;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
@@ -459,18 +407,18 @@ public class BloodSchedulerGUI extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JButton nextPatientButton;
-    private javax.swing.JPanel nextPatientPanel;
     private javax.swing.JTextPane nextPatientTextPane;
     private javax.swing.JButton noShowButton;
-    private javax.swing.JPanel noShowListPanel;
     private javax.swing.JTextPane noShowTextPane;
+    private javax.swing.JLabel noShowsListLabel;
     private javax.swing.JLabel patientAgeLabel;
     private javax.swing.JTextField patientAgeTextField;
     private javax.swing.JButton patientIntakeButton;
-    private javax.swing.JPanel patientIntakeFormPanel;
+    private javax.swing.JLabel patientIntakeFormHeadingLabel;
     private javax.swing.JLabel patientNameLabel;
     private javax.swing.JTextField patientNameTextField;
     private javax.swing.JComboBox<String> patientPriorityComboBox;
+    private javax.swing.JLabel patientPriorityLabel;
     private javax.swing.JPanel testerPanel;
     private javax.swing.JLabel testerTitleLabel;
     // End of variables declaration//GEN-END:variables

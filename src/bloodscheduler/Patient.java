@@ -55,7 +55,7 @@ public class Patient {
         }
 
         // Hospital points
-        score += (hospital ? 3 : 1);
+        score += (hospital ? 3 : 1); // Ternary Operator
 
         return score;
     }

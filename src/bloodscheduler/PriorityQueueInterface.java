@@ -16,4 +16,5 @@ public interface PriorityQueueInterface {
     public boolean isEmpty();
     public Object dequeue();
     public String printPQueue();
+    public Object getFirst();
 }

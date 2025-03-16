@@ -57,6 +57,7 @@ public class PriorityQueue implements PriorityQueueInterface{
         return sb.toString();
     }
 
+    @Override
     public Patient getFirst() {
         if (!thePQueue.isEmpty()) {
             return thePQueue.get(0);

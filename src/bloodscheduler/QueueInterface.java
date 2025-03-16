@@ -14,7 +14,6 @@ public interface QueueInterface {
     
     public boolean isEmpty();
     public int size();
-    public Object frontElement();
     public void enqueue(Object newItem);
     public Object dequeue();
     public String printQueue();

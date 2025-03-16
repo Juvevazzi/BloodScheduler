@@ -29,14 +29,6 @@ public class Queue implements QueueInterface {
         return theQueue.size();
     }
 
-    public Object frontElement() {
-        if (theQueue.size() > 0) {
-            return theQueue.get(0);
-        } else {
-            return null;
-        }
-    }
-
     public void enqueue(Object newItem) {
         theQueue.add((Patient) newItem);
     }
@@ -55,8 +47,10 @@ public class Queue implements QueueInterface {
             return "No Show Queue is empty.";
         } else {
             StringBuffer sb = new StringBuffer();
-            for (Patient patient : theQueue) {
-                sb.append(patient).append("\n");
+            int size = theQueue.size();
+            int start = Math.max(0, size - 5); // Start from the last 5 elements or the beginning if less than 5
+            for (int i = start; i < size; i++) {
+                sb.append(theQueue.get(i)).append("\n");
             }
             return sb.toString();
         }
